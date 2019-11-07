@@ -27,7 +27,7 @@ The front-end was developed with React Router to maximize efficacy of component-
 ---
 
 <!-- ![bookgle-recording](./client/public/bookgle-recording.gif)  -->
-<img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" style="align:center;text-align:center" width="277" height="84">
+<img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" style="align:center;text-align:center" height="640">
 
 ---
 
