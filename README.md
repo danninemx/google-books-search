@@ -1,4 +1,4 @@
-# <a href="https://bookgle.herokuapp.com"><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" width="277" height="84"></a>
+# <a href="https://bookgle.herokuapp.com">Google Books Search</a><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" width="277" height="84">
 
 ## Table of Contents <a name="toc"></a>
 
