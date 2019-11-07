@@ -10,14 +10,13 @@
 
 ---
 
-<!--
-## <div align=">Overview <a name="overview"></a> <a href="https://github.com/danninemx/google-books-search#table-of-contents" align="right">Return to menu</a></div> -->
+## <div align=">Overview <a name="overview"></a>
 
-## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> [Return to menu](#toc) </div>
+<!-- ## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> [Return to menu](#toc) </div>
 
 <div style="display: flex; justify-content: space-between"> <a href="google.com">google</a> <div style="display:inline"> <a href='google.com'>test</a> </div></div>
 
-<p style="text-align: right"> text right </p>
+<p style="text-align: right"> text right </p> -->
 
 Welcome to Bookgle!
 
