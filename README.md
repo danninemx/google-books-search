@@ -17,6 +17,8 @@
 
 <div style="display: flex; justify-content: space-between"> <a href="google.com">google</a> <div style="display:inline"> <a href='google.com'>test</a> </div></div>
 
+<div style="text-align: right"> text right </div>
+
 Welcome to Bookgle!
 
 Bookgle is a full-stack SPA (Single Page Application) that allows users to search, save and preview books online.
