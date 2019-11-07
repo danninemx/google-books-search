@@ -1,4 +1,4 @@
-# <a href="https://bookgle.herokuapp.com"><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="bookgle-logo" width="277" height="84"></a>
+# <a href="https://bookgle.herokuapp.com"><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" width="277" height="84"></a>
 
 ## Table of Contents
 
@@ -10,7 +10,10 @@
 
 ---
 
-## Overview <a name="overview"></a>
+<!--
+## <div align=">Overview <a name="overview"></a> <a href="https://github.com/danninemx/google-books-search#table-of-contents" align="right">Return to menu</a></div> -->
+
+## <div style="display: flex; justify-content: space-between"><a name="overview">Overview</a> <a href="/#table-of-contents">Return to menu</a> </div>
 
 Welcome to Bookgle!
 
