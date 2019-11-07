@@ -1,6 +1,6 @@
 # <a href="https://bookgle.herokuapp.com"><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" width="277" height="84"></a>
 
-## Table of Contents
+## Table of Contents <a name="toc"></a>
 
 - [Overview](#overview)
 - [Instructions](#instructions)
@@ -13,7 +13,7 @@
 <!--
 ## <div align=">Overview <a name="overview"></a> <a href="https://github.com/danninemx/google-books-search#table-of-contents" align="right">Return to menu</a></div> -->
 
-## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> <a href="../../#table-of-contents"> Return to menu</a> </div>
+## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> [Return to menu](#toc) </div>
 
 <div style="display: flex; justify-content: space-between"> <a href="google.com">google</a> <a href='google.com'>test</a> </div>
 
