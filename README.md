@@ -17,7 +17,7 @@
 
 <div style="display: flex; justify-content: space-between"> <a href="google.com">google</a> <div style="display:inline"> <a href='google.com'>test</a> </div></div>
 
-<div style="text-align: right"> text right </div>
+<p style="text-align: right"> text right </p>
 
 Welcome to Bookgle!
 
