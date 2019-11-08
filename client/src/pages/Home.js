@@ -9,7 +9,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
 // Per https://medium.com/dailyjs/combining-react-with-socket-io-for-real-time-goodness-d26168429a34:
-import openSocket from 'socket.io-client';
+// import openSocket from 'socket.io-client';
 
 class Home extends Component {
   state = {
@@ -52,8 +52,9 @@ class Home extends Component {
   handleBookSave = id => {
     const book = this.state.books.find(book => book.id === id);
 
+    // Fix this part when implementing Socket
     // Front end listens to the port opened by Socket.io in server.js
-    const socket = openSocket('http://localhost:3001');
+    // const socket = openSocket('http://localhost:3001');
 
     API.saveBook({
       googleId: book.id,
