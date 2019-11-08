@@ -21,11 +21,13 @@ server.listen(PORT, () =>
 
 app.get('/', function (req, res) {
   console.log(__dirname);
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/client/public/index.html');
 });
 
 io.on('connection', function (socket) {
   // socket.emit('signon', 'Welcome to Bookgle');
+
+  socket.emit('save', 'You saved a book!');
 
   // socket.broadcast.emit('user just connected');
 

@@ -8,6 +8,9 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
+// Per https://medium.com/dailyjs/combining-react-with-socket-io-for-real-time-goodness-d26168429a34:
+import openSocket from 'socket.io-client';
+
 class Home extends Component {
   state = {
     books: [],
@@ -39,7 +42,7 @@ class Home extends Component {
       );
   };
 
-  // Call this to handle submit button click
+  // Call this to handle search button click
   handleFormSubmit = event => {
     event.preventDefault();
     this.getBooks();
@@ -48,6 +51,9 @@ class Home extends Component {
   // Call this to run API method saveBook
   handleBookSave = id => {
     const book = this.state.books.find(book => book.id === id);
+
+    // Front end listens to the port opened by Socket.io in server.js
+    const socket = openSocket('http://localhost:3001');
 
     API.saveBook({
       googleId: book.id,
