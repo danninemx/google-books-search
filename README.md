@@ -19,8 +19,8 @@ testing
 <p style="text-align:right">test left <a href='#' style="display:block; text-align:right">test right</a></p>
 <p style="text-align:right">left <a href='#' style="float:right">right</a></p>
 <p align="right">left <a href='#' style="float:right">right</a></p>
-<p align="left">left <a href='#' style="float:right">right</a></p>
-<p align="left">left <p  style="display:inline-block" align='right'> <a href='#' style="float:right">right</a></p></p>
+<p float="left">left <a href='#' style="float:right">right</a></p>
+<p float="left">left <p align='right'> <a href='#' style="float:right">right</a></p></p>
 testing
 
 <!-- ## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> [Return to menu](#toc) </div>
