@@ -8,8 +8,9 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
-// Per https://medium.com/dailyjs/combining-react-with-socket-io-for-real-time-goodness-d26168429a34:
+// Client-side Socket handling requirement per https://medium.com/dailyjs/combining-react-with-socket-io-for-real-time-goodness-d26168429a34:
 import io from 'socket.io-client';
+
 class Home extends Component {
   state = {
     books: [],
@@ -64,15 +65,16 @@ class Home extends Component {
     const book = this.state.books.find(book => book.id === id);
 
     // Socket broadcast 
-    const socket = io()
+    const socket = io();
     socket.connect('https://bookgle.herokuapp.com/');
 
     // Socket listener to the event named save
     socket.on('save', (data) => {
-      console.log('Action detected. Message to display is : ', data);
+      console.log(`Save action detected. Message to display is : "${data}"\n`);
       alert(data);
     })
 
+    // After saving the book, show all books matching the query sans saved books
     API.saveBook({
       googleId: book.id,
       title: book.volumeInfo.title,

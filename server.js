@@ -27,26 +27,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-
+// Socket.io message handler
 io.on('connection', function (socket) {
-  // socket.emit('signon', 'Welcome to Bookgle');
-  // socket.on('hello')
+  // Per https://socket.io/docs/#Broadcasting-messages:
+  // Attaching this broadcast flag to the emit method call on custom event named "save" sends message to all connected sockets except the one that started it.
+  // In laymen's term, anyone who is viewing the site 
+  socket.broadcast.emit('save', 'A Bookgle user has just saved a book!');
 
+  // Without the flag, the event seems to apply only to yourself
   // socket.emit('save', 'You saved a book!');
-  // Per https://socket.io/docs/#Broadcasting-messages, this broadcast flag to the emit method call sends message to all connected sockets except the one that started it.
-  socket.broadcast.emit('save', 'You saved a book!');
-
-  // socket.broadcast.emit('user just connected');
-
-  // socket.on('connect', function (data) {
-  //   console.log(data);
-  // });
-
-  // socket.on('my other event', function (data) {
-  //   console.log(data);
-  // });
-
-  // socket.emit('news', { hello: 'world1' });
 });
 
 //------------------------//
