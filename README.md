@@ -18,6 +18,8 @@ testing
 
 <p style="text-align:right">test left <a href='#' style="display:block; text-align:right">test right</a></p>
 <p style="text-align:right">left <a href='#' style="float:right">right</a></p>
+<p align="right">left <a href='#' style="float:right">right</a></p>
+<p align="left">left <a href='#' style="float:right">right</a></p>
 testing
 
 <!-- ## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> [Return to menu](#toc) </div>
@@ -36,7 +38,7 @@ The front-end was developed with React Router to maximize efficacy of component-
 
 <!-- ![bookgle-recording](./client/public/bookgle-recording.gif)  -->
 <!-- <img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" style="align:center;text-align:center" height="640"> -->
-<img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" align="center" height="640">
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" height="640"> </p>
 
 ---
 
