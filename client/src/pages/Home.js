@@ -19,7 +19,7 @@ class Home extends Component {
     alert: ''
   };
   componentDidMount() {
-    const socket = openSocket('https://bookgle.herokuapp.com/');
+    const socket = openSocket.connect('https://bookgle.herokuapp.com/');
     socket.on('save', (data) => {
       console.log(data)
 
