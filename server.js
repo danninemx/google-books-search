@@ -20,7 +20,7 @@ server.listen(PORT, () =>
 
 app.get('/', function (req, res) {
   console.log(__dirname);
-  res.sendFile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/client/public/index.html');
 });
 
 
