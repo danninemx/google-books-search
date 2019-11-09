@@ -9,15 +9,24 @@ import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
 // Per https://medium.com/dailyjs/combining-react-with-socket-io-for-real-time-goodness-d26168429a34:
-// import openSocket from 'socket.io-client';
+import openSocket from 'socket.io-client';
 
 class Home extends Component {
   state = {
     books: [],
     q: "",
-    message: "Search For A Book To Begin"
+    message: "Search For A Book To Begin",
+    alert: ''
   };
+  componentDidMount() {
+    const socket = openSocket();
+    socket.on('save', (data) => {
+      console.log(data)
 
+      alert(data)
+    })
+
+  }
   // Call this onChange
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -54,7 +63,7 @@ class Home extends Component {
 
     // Fix this part when implementing Socket
     // Front end listens to the port opened by Socket.io in server.js
-    // const socket = openSocket('http://localhost:3001');
+
 
     API.saveBook({
       googleId: book.id,

@@ -10,23 +10,23 @@ const PORT = process.env.PORT || 3001;
 // Socket.io setup //
 //-----------------//
 // const app = require('express')();
-// const server = require('http').Server(app);
-// const io = require('socket.io')(server);
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
-// server.listen(PORT, () =>
-//   console.log(`🌎  ==> Socket.io initialized API Server to now listen on PORT ${PORT}!`)
-// );
+server.listen(PORT, () =>
+  console.log(`🌎  ==> Socket.io initialized API Server to now listen on PORT ${PORT}!`)
+);
 // WARNING: app.listen(80) will NOT work here!
 
-// app.get('/', function (req, res) {
-//   console.log(__dirname);
-//   res.sendFile(__dirname + '/public/index.html');
-// });
+app.get('/', function (req, res) {
+  console.log(__dirname);
+  res.sendFile(__dirname + '/public/index.html');
+});
 
-/*
+
 io.on('connection', function (socket) {
   // socket.emit('signon', 'Welcome to Bookgle');
-
+  // socket.on('hello')
   socket.emit('save', 'You saved a book!');
 
   // socket.broadcast.emit('user just connected');
@@ -41,7 +41,7 @@ io.on('connection', function (socket) {
 
   // socket.emit('news', { hello: 'world1' });
 });
-*/
+
 
 //------------------------//
 // End of Socket.io setup //
@@ -70,7 +70,9 @@ mongoose.connect(
   }
 );
 
+/* Disabled for Socket
 // Express starts the API server
-app.listen(PORT, () =>
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
-);
+// app.listen(PORT, () =>
+//   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
+// );
+*/
