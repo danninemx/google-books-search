@@ -9,8 +9,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
 
 // Per https://medium.com/dailyjs/combining-react-with-socket-io-for-real-time-goodness-d26168429a34:
-import openSocket from 'socket.io-client';
-
+import io from 'socket.io-client';
 class Home extends Component {
   state = {
     books: [],
@@ -19,7 +18,8 @@ class Home extends Component {
     alert: ''
   };
   componentDidMount() {
-    const socket = openSocket.connect('https://bookgle.herokuapp.com/');
+    const socket = io()
+    socket.connect('https://bookgle.herokuapp.com/');
     socket.on('save', (data) => {
       console.log(data)
 
