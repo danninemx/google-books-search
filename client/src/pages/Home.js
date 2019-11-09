@@ -17,16 +17,18 @@ class Home extends Component {
     message: "Search For A Book To Begin",
     alert: ''
   };
-  componentDidMount() {
-    const socket = io()
-    socket.connect('https://bookgle.herokuapp.com/');
-    socket.on('save', (data) => {
-      console.log(data)
 
-      alert(data)
-    })
+  // Working test code that broadcasts on load of Home page.
+  // componentDidMount() {
+  //   const socket = io()
+  //   socket.connect('https://bookgle.herokuapp.com/');
+  //   socket.on('save', (data) => {
+  //     console.log(data)
 
-  }
+  //     alert(data)
+  //   })
+  // }
+
   // Call this onChange
   handleInputChange = event => {
     const { name, value } = event.target;
@@ -61,9 +63,15 @@ class Home extends Component {
   handleBookSave = id => {
     const book = this.state.books.find(book => book.id === id);
 
-    // Fix this part when implementing Socket
-    // Front end listens to the port opened by Socket.io in server.js
+    // Socket broadcast 
+    const socket = io()
+    socket.connect('https://bookgle.herokuapp.com/');
 
+    // Socket listener to the event named save
+    socket.on('save', (data) => {
+      console.log('Action detected. Message to display is : ', data);
+      alert(data);
+    })
 
     API.saveBook({
       googleId: book.id,

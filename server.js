@@ -16,11 +16,13 @@ const io = require('socket.io')(server);
 server.listen(PORT, () =>
   console.log(`🌎  ==> Socket.io initialized API Server to now listen on PORT ${PORT}!`)
 );
-// WARNING: app.listen(80) will NOT work here!
+// WARNING: app.listen(PORT) will NOT work here!
 
-// For Socket to work
+// Local instance will use 2 servers - Express and localhost - but Heroku will only use Express.
 app.get('/', function (req, res) {
-  console.log(__dirname);
+  console.log('Path is : ', __dirname);
+
+  // For Socket to work, it needs to point to the build folder, not the public folder.
   // res.sendFile(__dirname + '/client/public/index.html');
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
@@ -29,7 +31,10 @@ app.get('/', function (req, res) {
 io.on('connection', function (socket) {
   // socket.emit('signon', 'Welcome to Bookgle');
   // socket.on('hello')
-  socket.emit('save', 'You saved a book!');
+
+  // socket.emit('save', 'You saved a book!');
+  // Per https://socket.io/docs/#Broadcasting-messages, this broadcast flag to the emit method call sends message to all connected sockets except the one that started it.
+  socket.broadcast.emit('save', 'You saved a book!');
 
   // socket.broadcast.emit('user just connected');
 
@@ -44,7 +49,6 @@ io.on('connection', function (socket) {
   // socket.emit('news', { hello: 'world1' });
 });
 
-
 //------------------------//
 // End of Socket.io setup //
 //------------------------//
@@ -53,6 +57,7 @@ io.on('connection', function (socket) {
 // Configure body parsing for AJAX requests
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 // Serve up static assets
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -60,9 +65,6 @@ if (process.env.NODE_ENV === "production") {
 
 // Add routes, both API and view
 app.use(routes);
-
-
-
 
 // Connect to the Mongo DB
 mongoose.connect(
@@ -73,7 +75,7 @@ mongoose.connect(
   }
 );
 
-/* Disabled for Socket
+/* Standard Express listener. Disabled to allow Socket to listen on it above.
 // Express starts the API server
 // app.listen(PORT, () =>
 //   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`)
