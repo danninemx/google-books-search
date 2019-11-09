@@ -16,13 +16,12 @@ const PORT = process.env.PORT || 3001;
 // server.listen(PORT, () =>
 //   console.log(`🌎  ==> Socket.io initialized API Server to now listen on PORT ${PORT}!`)
 // );
-
 // WARNING: app.listen(80) will NOT work here!
 
-app.get('/', function (req, res) {
-  console.log(__dirname);
-  res.sendFile(__dirname + '/public/index.html');
-});
+// app.get('/', function (req, res) {
+//   console.log(__dirname);
+//   res.sendFile(__dirname + '/public/index.html');
+// });
 
 /*
 io.on('connection', function (socket) {
