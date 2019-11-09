@@ -18,6 +18,12 @@ server.listen(PORT, () =>
 );
 // WARNING: app.listen(80) will NOT work here!
 
+// For Socket to work
+app.get('/', function (req, res) {
+  console.log(__dirname);
+  // res.sendFile(__dirname + '/client/public/index.html');
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 
 io.on('connection', function (socket) {
@@ -55,12 +61,6 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-// For Socket to work
-app.get('*', function (req, res) {
-  console.log(__dirname);
-  // res.sendFile(__dirname + '/client/public/index.html');
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
 
 
 
