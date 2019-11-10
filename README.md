@@ -71,11 +71,11 @@ Additionally - when a visitor saves a book to the shared list, everyone who is v
 
 #### Desktop Alert
 
-<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert.png" alt="Bookgle desktop alert" height="268"> </p>
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert.png" alt="Bookgle desktop alert" height="150"> </p>
 
 #### Mobile Alert
 
-<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert-mobile.png" alt="Bookgle mobile alert" height="400"> </p>
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert-mobile.png" alt="Bookgle mobile alert" height="500"> </p>
 
 ---
 
