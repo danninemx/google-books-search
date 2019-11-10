@@ -16,9 +16,9 @@
 
 Welcome to Bookgle!
 
-Bookgle is a full-stack Single Page Application that allows users to search, save and preview books online.
+Bookgle is a full-stack Single Page Application that allows users to search, browse, save and preview books online.
 
-Simply use the search bar to find a list of books, and away we go.
+Simply use the search bar to find a list of books, and feel free to interact with the books using embedded buttons.
 
 ---
 
@@ -107,7 +107,7 @@ Additionally - when a visitor saves a book to the shared list, everyone who is v
 - Additional data sources and media types
 - Profile personalization
 - Share function
-- ~~User notification~~ (Nov 9, 2019: Site now alerts visitor when another visitor saves a book to the shared list)
+- ~~User notification~~ _(Nov 9, 2019: Site now alerts visitor when another visitor saves a book to the shared list)_
 
 ---
 
