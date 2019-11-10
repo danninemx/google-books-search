@@ -12,8 +12,9 @@
 
 ---
 
-## Overview <a name="overview"></a> <p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+## Overview <a name="overview"></a>
 
+<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
 Welcome to Bookgle!
 
 Bookgle is a full-stack SPA (Single Page Application) that allows users to search, save and preview books online.
@@ -31,6 +32,7 @@ The front-end was developed with React Router to maximize efficacy of component-
 ## Instructions <a name="instructions"></a>
 
 <p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+
 ### 1. Visit the [deployed page](https://bookgle.herokuapp.com).
 
 Alternatively, user can install the app locally via GitHub, Node and NPM/Yarn:
@@ -99,5 +101,7 @@ Additionally, Socket.io implementation allow
 ---
 
 ## Developer <a name="team"></a>
+
+<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
 
 - [Danny Kim](https://github.com/danninemx)
