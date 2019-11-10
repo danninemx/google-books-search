@@ -16,9 +16,9 @@
 
 Welcome to Bookgle!
 
-Bookgle is a full-stack SPA (Single Page Application) that allows users to search, save and preview books online.
+Bookgle is a full-stack Single Page Application that allows users to search, save and preview books online.
 
-The front-end was developed with React Router to maximize efficacy of component-driven design.
+Simply use the search bar to find a list of books, and away we go.
 
 ---
 
@@ -33,15 +33,15 @@ The front-end was developed with React Router to maximize efficacy of component-
 
 ### 1. Visit the deployed site. (https://bookgle.herokuapp.com)
 
-Alternatively, user can install the app locally via GitHub, Node and NPM/Yarn:
+Alternatively, user can install the app locally on via GitHub, Node and NPM/Yarn:
 
-```js
+```
 git clone https://github.com/danninemx/google-books-search.git
 npm i     # or yarn
 npm start # or yarn run start
-
-# This will run a local instance of the app. If not automatically guided, open `localhost:3001` on your web browser.
 ```
+
+This will run a local instance of the app at port 3001 by default and automatically open it for you. If it does not, please visit `localhost:3001` on your web browser.
 
 ### 2. Search for a book.
 
@@ -59,7 +59,7 @@ Entering a keyword and pressing "Search" will query Google Books for matching bo
 
 These properties are also saved in the database.
 
-### 3. Additional actions
+### 3. Take additional actions.
 
 Once a search has returned some results, user can:
 
@@ -67,6 +67,14 @@ Once a search has returned some results, user can:
 - Save a book to the "Saved" page or remove it
 
 Additionally, anytime a user saves a book, every other visitor<sup>\*</sup> will be alerted.
+
+[desktop]
+
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert.png" alt="Bookgle desktop alert" height=""> </p>
+
+[mobile]
+
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert-mobile.png" alt="Bookgle mobile alert" height=""> </p>
 
 <sub>(\* May not work for visitors in privacy/incognito mode)</sub>
 
@@ -76,6 +84,8 @@ Additionally, anytime a user saves a book, every other visitor<sup>\*</sup> will
 
 <p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
+- [Heroku](https://heroku.com)
+- [Heroku Add-on: mLab MongoDB](https://elements.heroku.com/addons/mongolab)
 - [Node.js](https://nodejs.org/en/)
 - [NPM: Axios](https://www.npmjs.com/package/axios)
 - [NPM: Express](https://www.npmjs.com/package/express)
@@ -86,8 +96,6 @@ Additionally, anytime a user saves a book, every other visitor<sup>\*</sup> will
 - [NPM: Socket.io-client](https://www.npmjs.com/package/socket.io-client)
 - [React](https://github.com/facebookincubator/create-react-app)
 - [React Router](https://www.npmjs.com/package/react-router-dom)
-- [Heroku](https://heroku.com)
-- [Heroku Add-on: mLab MongoDB](https://elements.heroku.com/addons/mongolab)
 
 ---
 
@@ -98,7 +106,7 @@ Additionally, anytime a user saves a book, every other visitor<sup>\*</sup> will
 - Additional data sources and media types
 - Profile personalization
 - Share function
-- User notification
+- ~~User notification~~ (Nov 9, 2019: Site now alerts visitor when another visitor saves a book to the shared list)
 
 ---
 
