@@ -1,8 +1,4 @@
-# <a href="https://bookgle.herokuapp.com">Google Books Search</a>
-
-<!-- <img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" height="100"> -->
-
-<!-- # <a href="https://bookgle.herokuapp.com">Google Books Search</a><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" width="277" height="84"> -->
+# <a href="https://bookgle.herokuapp.com">Google Books Search</a> <img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" height="100"> <a name="top"></a>
 
 ## Table of Contents <a name="toc"></a>
 
@@ -16,7 +12,7 @@
 
 ## Overview <a name="overview"></a>
 
-<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+<p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
 Welcome to Bookgle!
 
@@ -27,16 +23,15 @@ The front-end was developed with React Router to maximize efficacy of component-
 ---
 
 <!-- ![bookgle-recording](./client/public/bookgle-recording.gif)  -->
-<!-- <img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" style="align:center;text-align:center" height="640"> -->
 <p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-recording.gif" alt="Bookgle recording" height="640"> </p>
 
 ---
 
 ## Instructions <a name="instructions"></a>
 
-<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+<p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
-### 1. Visit the [deployed page](https://bookgle.herokuapp.com).
+### 1. Visit the deployed site. (https://bookgle.herokuapp.com)
 
 Alternatively, user can install the app locally via GitHub, Node and NPM/Yarn:
 
@@ -44,11 +39,13 @@ Alternatively, user can install the app locally via GitHub, Node and NPM/Yarn:
 git clone https://github.com/danninemx/google-books-search.git
 npm i     # or yarn
 npm start # or yarn run start
+
+# This will run a local instance of the app. If not automatically guided, open `localhost:3001` on your web browser.
 ```
 
 ### 2. Search for a book.
 
-Entering a keyword and pressing "Search" will query Google Books for matching books, then display the following for each:
+Entering a keyword and pressing "Search" will query Google Books for matching books, then display the following for each book:
 
 - `Title` - Title of the book from the Google Books API
 
@@ -66,16 +63,18 @@ These properties are also saved in the database.
 
 Once a search has returned some results, user can:
 
-- View the details on Google Books website
+- View the details on the Google Books website
 - Save a book to the "Saved" page or remove it
 
-Additionally, anytime a user saves a book, every other user viewing the site will be alerted.
+Additionally, anytime a user saves a book, every other visitor<sup>\*</sup> will be alerted.
+
+<sub>(\* May not work for visitors in privacy/incognito mode)</sub>
 
 ---
 
 ## Technologies <a name="technologies"></a>
 
-<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+<p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
 - [Node.js](https://nodejs.org/en/)
 - [NPM: Axios](https://www.npmjs.com/package/axios)
@@ -94,7 +93,7 @@ Additionally, anytime a user saves a book, every other user viewing the site wil
 
 ## Future Development <a name="future"></a>
 
-<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+<p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
 - Additional data sources and media types
 - Profile personalization
@@ -105,6 +104,6 @@ Additionally, anytime a user saves a book, every other user viewing the site wil
 
 ## Developer <a name="team"></a>
 
-<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+<p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
 - [Danny Kim](https://github.com/danninemx)
