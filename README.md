@@ -1,4 +1,4 @@
-# <a href="https://bookgle.herokuapp.com">Google Books Search</a><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" height="70">
+# <a href="https://bookgle.herokuapp.com">Google Books Search</a><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" height="3em">
 
 <!-- # <a href="https://bookgle.herokuapp.com">Google Books Search</a><img src="https://github.com/danninemx/google-books-search/blob/master/client/src/components/Nav/bookgle-logo.png/" alt="Bookgle logo" align="right" width="277" height="84"> -->
 
@@ -15,6 +15,7 @@
 ## Overview <a name="overview"></a>
 
 <p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+
 Welcome to Bookgle!
 
 Bookgle is a full-stack SPA (Single Page Application) that allows users to search, save and preview books online.
@@ -66,7 +67,7 @@ Once a search has returned some results, user can:
 - View the details on Google Books website
 - Save a book to the "Saved" page or remove it
 
-Additionally, Socket.io implementation allow
+Additionally, anytime a user saves a book, every other user viewing the site will be alerted.
 
 ---
 
