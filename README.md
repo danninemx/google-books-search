@@ -12,7 +12,7 @@
 
 ---
 
-## Overview <a name="overview"></a>
+## Overview <a name="overview"></a> <p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
 
 Welcome to Bookgle!
 
@@ -30,6 +30,7 @@ The front-end was developed with React Router to maximize efficacy of component-
 
 ## Instructions <a name="instructions"></a>
 
+<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
 ### 1. Visit the [deployed page](https://bookgle.herokuapp.com).
 
 Alternatively, user can install the app locally via GitHub, Node and NPM/Yarn:
@@ -69,6 +70,8 @@ Additionally, Socket.io implementation allow
 
 ## Technologies <a name="technologies"></a>
 
+<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+
 - [Node.js](https://nodejs.org/en/)
 - [NPM: Axios](https://www.npmjs.com/package/axios)
 - [NPM: Express](https://www.npmjs.com/package/express)
@@ -86,6 +89,8 @@ Additionally, Socket.io implementation allow
 
 ## Future Development <a name="future"></a>
 
+<p align='right'><a href='#toc'><sup>[Back to Top]</sup></a></p>
+
 - Additional data sources and media types
 - Profile personalization
 - Share function
@@ -96,31 +101,3 @@ Additionally, Socket.io implementation allow
 ## Developer <a name="team"></a>
 
 - [Danny Kim](https://github.com/danninemx)
-
-markdown testing
-
-<!-- ## <div style="display:flex; justify-content:space-between">Overview <a name="overview"></a> [Return to menu](#toc) </div>
-
-<div style="display: flex; justify-content: space-between"> <a href="google.com">google</a> <div style="display:inline"> <a href='google.com'>test</a> </div></div>
-
-<p style="text-align: right"> text right </p>
-
-<p style="text-align:right">test left <a href='#' style="display:block; text-align:right">test right</a></p>
-<p style="text-align:right">left <a href='#' style="float:right">right</a></p>
-
-<p style="text-align:right">left <a href='#' style="display:block; text-align:right">right</a></p>
-
-<p style="text-align:left">left <a href='#' style="float:right">right</a></p>
-
-<p style="text-align:right">left <a href='#' style="float:right">right</a></p>
-
-<p align="right">left <a href='#' style="float:right">right</a></p>
-<p float="left">left <a href='#' style="float:right">right</a></p> -->
-
-<p float="left">left <p align='right'> <a href='#' style="float:right">right</a></p></p> 
-The one above was in the right proverbial direction.
-
-<p align='right' style="float:right"> <a href='#' >right</a></p>
-
-<h2 class="wiki-heading"><a id="s-1" href="#toc">1.</a> 개요<span class="wiki-edit-section"><a href="/edit/%EC%B1%84%EC%8B%9D%EC%A3%BC%EC%9D%98/%EB%B9%84%ED%8C%90%20%EB%B0%8F%20%EB%B0%98%EB%A1%A0?section=1" rel="nofollow">[편집]</a></span></h2>
-markdown testing
