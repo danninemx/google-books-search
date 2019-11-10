@@ -83,6 +83,21 @@ Additionally - when a visitor saves a book to the shared list, everyone who is v
 
 <p align='right'><a href='#top'><sup>[Back to Top]</sup></a></p>
 
+| Package                                                                    | Description |
+| -------------------------------------------------------------------------- | ----------- |
+| [Heroku](https://heroku.com)                                               | blah        |
+| [Heroku Add-on: mLab MongoDB](https://elements.heroku.com/addons/mongolab) | testing     |
+| [Node.js](https://nodejs.org/en/)                                          |             |
+| [NPM: Axios](https://www.npmjs.com/package/axios)                          |             |
+| [NPM: Express](https://www.npmjs.com/package/express)                      |             |
+| [NPM: If-Env](https://www.npmjs.com/package/if-env)                        |             |
+| [NPM: Mongoose](https://www.npmjs.com/package/mongoose)                    |             |
+| [NPM: Set-Value](https://www.npmjs.com/package/set-value)                  |             |
+| [NPM: Socket.io](https://www.npmjs.com/package/socket.io)                  |             |
+| [NPM: Socket.io-client](https://www.npmjs.com/package/socket.io-client)    |             |
+| [React](https://github.com/facebookincubator/create-react-app)             |             |
+| [React Router](https://www.npmjs.com/package/react-router-dom)             |             |
+
 - [Heroku](https://heroku.com)
 - [Heroku Add-on: mLab MongoDB](https://elements.heroku.com/addons/mongolab)
 - [Node.js](https://nodejs.org/en/)
