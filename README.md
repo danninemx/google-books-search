@@ -120,7 +120,7 @@ markdown testing
 <p float="left">left <p align='right'> <a href='#' style="float:right">right</a></p></p> 
 The one above was in the right proverbial direction.
 
-<p style="display:inline-block">left <p align='right' style="float:right"> <a href='#' >right</a></p></p>
+<p align='right' style="float:right"> <a href='#' >right</a></p>
 
 <h2 class="wiki-heading"><a id="s-1" href="#toc">1.</a> 개요<span class="wiki-edit-section"><a href="/edit/%EC%B1%84%EC%8B%9D%EC%A3%BC%EC%9D%98/%EB%B9%84%ED%8C%90%20%EB%B0%8F%20%EB%B0%98%EB%A1%A0?section=1" rel="nofollow">[편집]</a></span></h2>
 markdown testing
