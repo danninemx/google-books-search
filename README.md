@@ -66,17 +66,16 @@ Once a search has returned some results, user can:
 - View the details on the Google Books website
 - Save a book to the "Saved" page or remove it
 
-Additionally, anytime a user saves a book, every other visitor<sup>\*</sup> will be alerted.
-
-[desktop]
-
-<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert.png" alt="Bookgle desktop alert" height=""> </p>
-
-[mobile]
-
-<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert-mobile.png" alt="Bookgle mobile alert" height=""> </p>
-
+Additionally - when a visitor saves a book to the shared list, everyone who is viewing the site at the time<sup>\*</sup> will see an alert on the browser.
 <sub>(\* May not work for visitors in privacy/incognito mode)</sub>
+
+#### Desktop Alert
+
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert.png" alt="Bookgle desktop alert" height="268"> </p>
+
+#### Mobile Alert
+
+<p align="center"><img src="https://github.com/danninemx/google-books-search/blob/master/client/public/bookgle-alert-mobile.png" alt="Bookgle mobile alert" height="400"> </p>
 
 ---
 
