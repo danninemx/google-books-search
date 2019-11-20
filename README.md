@@ -33,7 +33,7 @@ Simply use the search bar to find a list of books, and feel free to interact wit
 
 ### 1. Visit the deployed site. (https://bookgle.herokuapp.com)
 
-Alternatively, user can install the app locally on via GitHub, Node and NPM/Yarn:
+Alternatively, user can install the app locally via GitHub, Node and NPM/Yarn:
 
 ```
 git clone https://github.com/danninemx/google-books-search.git
